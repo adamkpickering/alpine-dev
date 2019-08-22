@@ -6,7 +6,7 @@ Runs indefinitely until you stop it.
 
 ## Building
 
-Ensure `$CWD` is the root of this repo, then
+Ensure `$PWD` is the root of this repo, then
 
 ```
 docker build -f Dockerfile --tag alpine-dev .
