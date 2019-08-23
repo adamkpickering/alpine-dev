@@ -1,6 +1,7 @@
 FROM alpine:latest
 
-RUN apk add fish tmux git curl neovim python3
-RUN ln /usr/bin/nvim /usr/bin/vim
+RUN apk add bash tmux git vim less curl python3
+RUN git clone https://github.com/adamkpickering/dotfiles.git /root/dotfiles
+RUN /root/dotfiles/install.sh
 
 CMD ["/sbin/init"]
